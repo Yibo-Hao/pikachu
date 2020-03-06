@@ -15,73 +15,81 @@
 }
 
 /*style*/
+html{
+  font-size: 100px;
+}
 body {
   background: #ffe600;
 }
 
 .pikachu {
-  position: relative;
+  position: absolute;
+  width: 4.2rem;
+  height: 2.35rem;
+  transform: translateY(-50%) translateX(-50%);
+  top:25%;
+  left: 50%;
 }
 .nose {
-  border: 10px solid black;
+  border: 0.1rem solid black;
   border-color: black transparent transparent;
   border-bottom: none;
   width: 0px;
   height: 0px;
   position: absolute;
   left: 50%;
-  top: 145px;
-  margin-left: -10px;
+  top: 1.45rem;
+  margin-left: -0.1rem;
 }
 .nose::before {
   content: "";
   display: block;
-  width: 20px;
-  height: 10px;
+  width: 0.2rem;
+  height: 0.1rem;
   position: relative;
-  top: -20px;
-  left: -10px;
-  border-radius: 14px 14px 0 0;
+  top: -0.2rem;
+  left: -0.1rem;
+  border-radius: 0.14rem 0.14rem 0 0;
   background: black;
 }
 .eye {
-  border: 1px solid black;
-  width: 64px;
-  height: 64px;
+  border: 0.01rem solid black;
+  width: 0.64rem;
+  height: 0.64rem;
   position: absolute;
   left: 50%;
-  top: 100px;
-  margin-left: -32px;
+  top: 1rem;
+  margin-left: -0.32rem;
   border-radius: 50%;
   background: #2e2e2e;
 }
 .eye::before {
   content: "";
   display: block;
-  width: 10px;
-  height: 10px;
+  width: 0.1rem;
+  height: 0.1rem;
   position: absolute;
-  width: 25px;
-  height: 25px;
+  width: 0.25rem;
+  height: 0.25rem;
   background: #fff;
   border-radius: 50%;
-  top: 4px;
-  left: 8px;
+  top: 0.04rem;
+  left: 0.08rem;
 }
 .eye.left {
-  transform: translateX(-130px);
+  transform: translateX(-1.3rem);
 }
 .eye.right {
-  transform: translateX(130px);
+  transform: translateX(1.3rem);
 }
 
 .mouth {
-  width: 200px;
-  height: 200px;
+  width: 2rem;
+  height: 2rem;
   position: absolute;
   left: 50%;
-  top: 170px;
-  margin-left: -100px;
+  top: 1.7rem;
+  margin-left: -1rem;
 }
 .mouth > .up {
   position: absolute;
@@ -90,14 +98,14 @@ body {
 .mouth > .up::before {
   content: "";
   display: block;
-  height: 30px;
-  width: 100px;
-  border: 3px solid #2e2e2e;
+  height: 0.3rem;
+  width: 1rem;
+  border: 0.03rem solid #2e2e2e;
   border-radius: 0 0 0 80%;
   border-right-color: transparent;
   border-top-color: transparent;
   position: absolute;
-  transform: rotate(-25deg) translateX(2px);
+  transform: rotate(-25deg) translateX(0.02rem);
   top: 0;
   left: 0;
   background: #ffe600;
@@ -106,58 +114,58 @@ body {
   position: absolute;
   content: "";
   display: block;
-  height: 30px;
-  width: 100px;
-  border: 3px solid #2e2e2e;
+  height: 0.3rem;
+  width: 1rem;
+  border: 0.03rem solid #2e2e2e;
   border-radius: 0 0 80% 0;
   border-left-color: transparent;
   border-top-color: transparent;
   top: 0;
-  left: 100px;
-  transform: rotate(25deg) translateX(-2px);
+  left: 1rem;
+  transform: rotate(25deg) translateX(-0.02rem);
   background: #ffe600;
 }
 .mouth > .down > div {
   position: absolute;
-  border: 1px solid #2e2e2e;
+  border: 0.01rem solid #2e2e2e;
   background: #9b000a;
-  height: 200px;
-  width: 140px;
-  top: 9px;
-  left: 30px;
-  border-bottom-left-radius: 118px 230px;
-  border-bottom-right-radius: 118px 230px;
+  height: 2rem;
+  width: 1.4rem;
+  top: 0.09rem;
+  left: 0.3rem;
+  border-bottom-left-radius: 1.18rem 2.3rem;
+  border-bottom-right-radius: 1.18rem 2.3rem;
   overflow: hidden;
 }
 .mouth > .down > div::before {
   content: "";
   display: block;
   position: relative;
-  height: 170px;
-  width: 140px;
-  border-top-left-radius: 130px;
-  border-top-right-radius: 130px;
-  border-bottom-left-radius: 118px 230px;
-  border-bottom-right-radius: 118px 230px;
+  height: 1.7rem;
+  width: 1.4rem;
+  border-top-left-radius: 1.3rem;
+  border-top-right-radius: 1.3rem;
+  border-bottom-left-radius: 1.18rem 2.3rem;
+  border-bottom-right-radius: 1.18rem 2.3rem;
   background: #ff485f;
-  top: 30px;
+  top: 0.3rem;
 }
 .face {
   position: absolute;
-  top: 200px;
+  top: 2rem;
   left: 50%;
-  width: 88px;
-  height: 88px;
-  border: 3px solid black;
-  margin-left: -44px;
+  width: 0.88rem;
+  height: 0.88rem;
+  border: 0.03rem solid black;
+  margin-left: -0.44rem;
 }
 .face.left {
-  transform: translateX(-180px);
+  transform: translateX(-1.8rem);
   background: red;
   border-radius: 50%;
 }
 .face.right {
-  transform: translateX(180px);
+  transform: translateX(1.8rem);
   background: red;
   border-radius: 50%;
 }
@@ -180,3 +188,9 @@ body {
   transform-origin: 50% 100%;
   animation: wave 0.1s infinite;
 }
+@media(max-width:500px){
+  html{
+    font-size: 60px;
+  }
+}
+
